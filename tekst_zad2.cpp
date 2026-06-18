@@ -65,22 +65,4 @@
  }
 
 
- #include <iostream>
 
-void tolower(char text[]) {
-    while (*text) {
-        if ('A' <= *text && *text <= 'Z') {
-            *text += ('a' - 'A');
-        }
-        text++;
-    }
-}
-
-int textSize(char *text) {
-    int size = 0;
-    while (*text) {
-        size++;
-        text++;
-    }
-    return size;
-}
